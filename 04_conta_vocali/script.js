@@ -9,31 +9,49 @@ console.log(word);
  * @param {number} numberVocali restutuzione parametro sul numero di vocali contenute nella stringa
  */
 
-// function contNumberVocali(string) {
-for (let i = 0; i < word.length; i++) {
-  const currentChar = " ";
-  console.log(currentChar);
-
+function contNumberVocali(string) {
   let numberVocali = 0;
-  console.log(numberVocali);
+  for (let i = 0; i < string.length; i++) {
+    const currentChar = string[i];
 
-  currentChar = currentChar + string[i];
-  console.log(currentChar);
-  // if (
-  //   currentChar === "a" ||
-  //   currentChar === "e" ||
-  //   currentChar === "i" ||
-  //   currentChar === "o" ||
-  //   currentChar === "u"
-  // ) {
-  //   numberVocali += 1;
-  // }
+    if (
+      currentChar === "a" ||
+      currentChar === "e" ||
+      currentChar === "i" ||
+      currentChar === "o" ||
+      currentChar === "u"
+    ) {
+      numberVocali += 1;
+    }
+  }
+  return numberVocali;
 }
-return numberVocali;
-// }
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(contNumberVocali(word));
-console.log(numberVocali);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
+
+// function contNumberVocali(string) {
+//     for (let i = 0; i < string.length; i++) {
+//       // Prendo il carattere iesimo
+//       const stringChar = string[i];
+
+//       // creo una variabile che mi conti le vocali che incontro
+//       let stringVocali = "";
+
+//       // Controllo se il carattere è una vocale
+//       if (
+//         stringChar === "a" ||
+//         stringChar === "e" ||
+//         stringChar === "i" ||
+//         stringChar === "o" ||
+//         stringChar === "u"
+//       ) {
+//         stringVocali = stringVocali + stringChar;
+//       }
+
+//       const stringVocaliLength = stringVocali.length;
+//       return stringVocaliLength;
+//     }
+//   }

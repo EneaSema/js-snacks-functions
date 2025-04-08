@@ -11,9 +11,7 @@ console.log(userName);
  */
 
 function hiSaluto(name) {
-  let outputText = "Ciao ";
-  outputText += name;
-  return outputText;
+  return `ciao ${name}`;
 }
 
 // Invoca la funzione qui e stampa il risultato in console

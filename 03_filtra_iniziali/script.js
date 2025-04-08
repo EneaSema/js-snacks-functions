@@ -9,8 +9,8 @@ console.log(names);
  * @param {string} char parametro stringa per fare ricerca carattere
  * @param {Array} newArray restituzione array contente solo le parole che inziano con quella lettera
  */
-const newArray = [];
 function searchByChar(oldArray, char) {
+  const newArray = [];
   for (let i = 0; i < oldArray.length; i++) {
     let currentElement = "";
     currentElement += oldArray[i];
