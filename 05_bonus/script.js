@@ -21,18 +21,12 @@ function messageHi(parametrString) {
   let currentString = parametrString;
   let outputText = ``;
 
-  if (currentHour >= 0 || currentString <= 13) {
+  if (currentHour <= 13) {
     outputText = `Buongiorno ${currentString}`;
-
-    return outputText;
-  } else if (currentHour > 13 || currentString <= 17) {
+  } else if (currentString <= 17) {
     outputText = `Buon pomeriggio ${currentString}`;
-
-    return outputText;
-  } else if (currentHour > 17 || currentString <= 23) {
+  } else {
     outputText = `Buonasera ${currentString}`;
-
-    return outputText;
   }
   console.log(outputText);
   return outputText;
